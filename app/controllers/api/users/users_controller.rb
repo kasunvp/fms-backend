@@ -12,6 +12,10 @@ module Api
 
         render json: user
       end
+
+      def index
+        render json: User.all
+      end
     end
   end
 end

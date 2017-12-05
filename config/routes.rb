@@ -7,7 +7,7 @@ Rails.application.routes.draw do
         registrations: 'api/users/registrations'
     }
 
-    resources :users, only: [:show, :update], module: :users
+    resources :users, module: :users
 
     scope :v1, module: :v1 do
 
